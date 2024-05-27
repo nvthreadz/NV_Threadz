@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV_Threadz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to NV_Threadz</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>Welcome to NV_Threadz. We offer a wide range of products to meet your needs.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>NV_Threadz was founded with the mission to provide quality products and exceptional service.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-category">
+            <h3>Snacks</h3>
+            <div class="product-list">
+                <div>
+                    <h3>Product 1</h3>
+                    <p>Description of Product 1.</p>
+                    <p>Price: $10</p>
+                </div>
+                <div>
+                    <h3>Product 2</h3>
+                    <p>Description of Product 2.</p>
+                    <p>Price: $15</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-category">
+            <h3>Beverages</h3>
+            <div class="product-list">
+                <div>
+                    <h3>Product 3</h3>
+                    <p>Description of Product 3.</p>
+                    <p>Price: $20</p>
+                </div>
+                <div>
+                    <h3>Product 4</h3>
+                    <p>Description of Product 4.</p>
+                    <p>Price: $25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="http://127.0.0.1:5000/submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NV_Threadz. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
